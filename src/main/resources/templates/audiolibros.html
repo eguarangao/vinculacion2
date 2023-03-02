@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesibilidad</title>
+    <!--    Carga los estilos CSS de bootstrap-->
+    <link rel="stylesheet" href="../static/css/estilos.css"/>
+    <div th:insert="fragments/base :: css"></div>
+</head>
+<body><!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--Escribir contenido-->
+<div class="container-fluid">
+    <section>
+        <br>
+        <h1 class="text-center bold">Audiolibros</h1>
+        <div class="row g-0 align-content-center">
+            <div class="col-md-4">
+                <figure>
+                    <img src="img/audiolibros.jpeg" dir="auto" class="w-50 h-50 rounded mx-auto d-block"
+                         alt="Imagen de accesibilidad en PowerPoint" title="Accesibilidad en MS PowerPoint">
+                    <figcaption class="text-center">Figura 1. Accesibilidad en MS PowerPoint</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <p class="card-text">
+                        Un audiolibro es una grabación de un libro u otra obra que se lee en voz alta.
+                        Suelen descargarse como otros archivos de audio digital, como canciones o álbumes.
+                        La producción del audio puede realizarse de diferentes formas:
+                    </p>
+                    <ul>
+                        <li>Con locutores o narradores, personas con buena lectura en voz alta que leen el material
+                            impreso, graban y posteriormente editan lo leído.
+                        </li>
+                        <li>Con programas de conversión de texto a audio, solo si se cuenta con el texto digitalizado.
+                            Un ejemplo de este tipo de software es Balabolka.
+                        </li>
+                    </ul>
+                    <p class="card-text">Los audiolibros están disponibles para personas ciegas o con problemas de
+                        visión, así como para personas mayores, con dislexia o problemas motores que no pueden leer
+                        libros tradicionales.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section class="container overflow-hidden">
+        <div class="row gx-5">
+            <div class="col">
+                <h3 class=" text-center bold">Ventajas</h3>
+                <ul>
+                    <li>Se capta con mayor facilidad y rapidez la información.</li>
+                    <li>Ayuda a personas con discapacidades diferentes, ya sea dislexia o ceguera.</li>
+                </ul>
+
+            </div>
+            <div class="col">
+                <h3 class=" text-center bold">Dispositivos</h3>
+                <ul>
+                    <li>Reproductores de mp3</li>
+                    <li>Smartphones</li>
+                    <li>Tablets</li>
+                    <li>Estéreos domésticos</li>
+                    <li>Autos que admiten transmisión de audio</li>
+                    <li>Computadoras / Laptops</li>
+
+                </ul>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="text-center bold">Herramientas para crear audiolibros </h3>
+                <h4>
+                    SaveAsDAISY
+                </h4>
+                <p class="card-text mb-auto">
+                    SaveAsDAISY es un complemento gratuito para crear audiolibros con documentos MS Word que sean
+                    accesibles. Para utilizarlo es necesario que el documento sea verificado por el comprobador de
+                    accesibilidad de MS Word para luego convertirlo en DAISY XML o en un audiolibro. </p>
+                <div class="align-content-center">
+                    <figure>
+                        <img src="img/daisy.png" dir="auto" class="rounded mx-auto d-block"
+                             alt="Imagen de SaveAsDAISY en Microsoft Word."
+                             title="SaveAsDAISY en Microsoft Word.">
+                        <figcaption class="text-center">Figura 2.SaveAsDAISY en Microsoft Word.
+                        </figcaption>
+                    </figure>
+                </div>
+                <p>Para crear audiolibros utilizando SaveAsDAISY se debe proceder de la siguiente manera:</p>
+                <ol>
+                    <li>Seleccione la pestaña “Accesibilidad (Accessibility)” que se encuentra en la parte superior y
+                        haga clic en “Configuración (Settings)”
+                    </li>
+                    <li>Si el documento utiliza el estilo “Número de página (DAISY)” seleccione “Personalizado
+                        (Custom)”, de lo contrario seleccione “Automático (Automatic)” y haga clic en “Aceptar”.
+                    </li>
+                    <li>Seleccione “SaveAsDAISY” y elija según las necesidades "DAISY XML (a partir de docx único)" o
+                        "DAISY completo (a partir de docx único)".
+                    </li>
+                    <li>Proporcione la información necesaria (Título, Creador, etc.) y haga clic en “Traducir
+                        (Translate)”.
+                    </li>
+                    <li>El proceso de la conversión a audiolibro se terminará pronto y obtendrá el resultado en la
+                        carpeta de destino.
+                    </li>
+                </ol>
+                <p>Para encontrar el instalador dirigirse al apartado de vínculos y buscar el enlace que al final
+                    indique SaveAsDAISY</p>
+                <h4>
+                    AudioDocs
+                </h4>
+                <p class="card-text mb-auto">
+                    AudioDocs es una herramienta que puede convertir los documentos de MS Word en archivos Wave (.wav)
+                    con la ayuda de la API de Microsoft TTS y el componente COM de Microsoft Word. </p>
+                <div class="align-content-center">
+                    <figure>
+                        <img src="img/audiodoc.png" dir="auto" class="rounded mx-auto d-block"
+                             alt="Imagen de AudioDocs."
+                             title="AudioDocs">
+                        <figcaption class="text-center">Figura 3. AudioDocs
+                        </figcaption>
+                    </figure>
+                </div>
+                <p>Para crear audiolibros desde AudioDocs siga los siguientes pasos:</p>
+                <ol>
+                    <li>Seleccione “Browse” para elegir el documento Word que necesita convertir en audio libro.</li>
+                    <li>Seleccione “Set Output”, lo cual abrirá el explorador de archivo donde se podrá seleccionar la
+                        carpeta en la que se desea guardar el audiolibro. Agregue el nombre del archivo y elija el
+                        formato en el que se desea guardar.
+                    </li>
+                    <li>“TTS Voice” es el tipo de voz que tendrá el audiolibro; por defecto está seleccionada Microsoft
+                        Helena Desktop (Voz de habla español) y aunque también está disponible Microsoft Zira Desktop
+                        (Voz de habla inglés).
+                    </li>
+                    <li>Adicionalmente, también existe la configuración “Volumen” y “Speed”, que se pueden personalizar
+                        según las necesidades.
+                    </li>
+                    <li>Una vez realizado los pasos anteriores, se da clic en “Create AudioDoc” y se espera a que
+                        termine el proceso.
+                    </li>
+                </ol>
+                <p>Para encontrar el instalador dirigirse al apartado de vínculos y buscar el enlace que al final
+                    indique AudioDocs</p>
+                <h4>
+                    Balabolka
+                </h4>
+                <p class="card-text mb-auto">Balabolka es un programa que permite guardar el texto leído por ordenador
+                    en ficheros de sonido MP3.
+                    Cuando un fichero de sonido de este tipo se reproduce por un reproductor de audio, el texto se
+                    muestra simultáneamente.</p>
+                <div class="align-content-center">
+                    <figure>
+                        <img src="img/balabolkaabrir.png" dir="auto" class="rounded mx-auto d-block"
+                             alt="Imagen de botón para abrir un documento en Balabolka.."
+                             title="Botón para abrir un documento en Balabolka.">
+                        <figcaption class="text-center">Figura 4. Botón para abrir un documento en Balabolka.
+                        </figcaption>
+                    </figure>
+                </div>
+                <p>Al hacer clic en el botón “Abrir” que se muestra en la Figura 4 se abre el explorador de archivos en
+                    Figura 5, donde se puede seleccionar el archivo que se desea convertir en audiolibro.</p>
+                <div class="align-content-center">
+                    <figure>
+                        <img src="img/explorararchivo.png" dir="auto" class="img-fluid rounded mx-auto d-block"
+                             alt="Imagen de explorador de archivos."
+                             title="Explorador de archivos.">
+                        <figcaption class="text-center">Figura 5. Explorador de archivos.
+                        </figcaption>
+                    </figure>
+                </div>
+                <p>Una vez cargado el archivo en PDF, este se convertirá en texto y al dar clic en reproducir que se
+                    muestra en la Figura 6. Se escucha el audiolibro señalando simultáneamente a el texto leído.</p>
+                <figure>
+                    <img src="img/reproduciendotxt.png" dir="auto" class="img-fluid rounded mx-auto d-block"
+                         alt="Imagen reproduciendo el texto en audio."
+                         title="Reproduciendo el texto en audio.">
+                    <figcaption class="text-center">Figura 6. Reproduciendo el texto en audio.
+                    </figcaption>
+                </figure>
+                <p>Para guardar el audiolibro, se debe detener la reproducción y al hacer clic en el botón “Guardar
+                    archivo de audio”. Esto abrirá el explorador de archivos donde se podrá seleccionar la carpeta en la
+                    que se desea guardar el audiolibro, cambiar el nombre del archivo y elegir el formato en el que se
+                    desea guardar, como se ilustra en la Figura 7.</p>
+                <figure>
+                    <img src="img/guardarpdf.png" dir="auto" class="img-fluid rounded mx-auto d-block"
+                         alt="Imagen guardando el documento PDF en audiolibro."
+                         title="Guardando el documento PDF en audiolibro.">
+                    <figcaption class="text-center">Figura 7. Guardando el documento PDF en audiolibro.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+    </section>
+
+</div>
+<div th:insert="fragments/base :: js"></div>
+</body>
+<!--Cargar el foote-->
+<footer>
+    <div th:insert="fragments/base::footer"></div>
+</footer>
+</html>

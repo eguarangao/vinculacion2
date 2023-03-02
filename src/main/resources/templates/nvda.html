@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>NVDA: Software para escucha</title>
+    <!--    Carga los estilos CSS de bootstrap-->
+    <div th:insert="fragments/base :: css"></div>
+</head>
+<body><!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--Escribir contenido-->
+<div class="container-fluid">
+    <h1>Hola soy NVDA</h1>
+</div>
+<div th:insert="fragments/base :: js"></div>
+</body>
+<!--Cargar el foote-->
+<footer>
+    <div th:insert="fragments/base::footer"></div>
+</footer>
+</html>

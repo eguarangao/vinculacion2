@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesibilidad</title>
+    <!--    Carga los estilos CSS de bootstrap-->
+    <div th:insert="fragments/base :: css"></div>
+</head>
+<body><!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--Escribir contenido-->
+<div class="container-fluid">
+    <section>
+        <br>
+        <h1 class="text-center bold">Accesibilidad en Microsoft Word (MS Word)</h1>
+        <div class="row g-0 align-content-center">
+            <div class="col-md-4">
+                <figure>
+                    <img src="img/accesibilidadword.png" dir="auto" class="w-50 h-50 rounded mx-auto d-block"
+                         alt="Imagen de accesibilidad en MS Word" title="Accesibilidad en MS Word">
+                    <figcaption class="text-center">Figura 1. Accesibilidad en MS Word.</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <p class="card-text">
+                        MS Word es un software informático para el procesamiento de texto que permite crear documentos
+                        bien organizados, con estilos, en los que se pueden incluir imágenes y otros objetos multimedia.
+                        Para garantizar que todos los usuarios tengan un acceso correcto a la información contenida en
+                        el documento se deben utilizar las herramientas proporcionadas por MS Word. MS Word
+                        incluye una herramienta para comprobar la accesibilidad que permite revisar el contenido y
+                        marcar los problemas de accesibilidad que se detecten.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <br>
+        <h3 class="text-center bold">Comprobar accesibilidad en MS Word</h3>
+        <div class="row g-0 align-content-center">
+            <div class="col-md-6">
+                <figure>
+                    <img src="img/comprobadorAccesibilidad.png" dir="auto" class="img-fluid rounded mx-auto d-block"
+                         alt="Imagen de comprobador de accesibilidad de MS Word."
+                         title="Comprobador de accesibilidad de MS Word.">
+                    <figcaption class="text-center">Figura 2. Comprobador de accesibilidad de MS Word.</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-5">
+                <div class="card-body">
+                    <p class="card-text">
+                        Para acceder al comprobador de accesibilidad, seleccione la pestaña “Revisar” que se encuentra
+                        en la parte superior y elija la opción “Comprobar accesibilidad” como se muestra en la Figura 2.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 align-content-center">
+            <div class="col-md-6">
+                <figure>
+                    <img src="img/resultadoaccesibilidadword.png" dir="auto" class="w-42 h-50 rounded mx-auto d-block"
+                         alt="Imagen de resultado de la inspección de accesibilidad."
+                         title="Resultado de la inspección de accesibilidad en MS Word.">
+                    <figcaption class="text-center">Figura 3. Resultado de la inspección de accesibilidad.</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-5">
+                <div class="card-body">
+                    <br>
+                    <br>
+                    <p class="card-text">
+                        Luego, como se ilustra en la Figura 3 se desplegará una barra lateral en la parte derecha en
+                        donde se muestra los resultados de la inspección del documento sobre los diferentes problemas de
+                        accesibilidad que tenga. Cuando se resuelve los problemas de accesibilidad, desaparece el
+                        informe automáticamente. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="text-center bold">Texto alternativo en MS Word</h3>
+                <p class="card-text mb-auto">
+                    Al incrustar ilustraciones en un documento Word con el fin de dar a conocer alguna información
+                    es muy probable que una persona con discapacidad visual no reciba dicha información. Para
+                    contrarrestar este problema MS Word implementa la herramienta de texto alternativo con el fin de
+                    describir el contenido o lo que se quiere transmitir con estas ilustraciones. En la Figura 4
+                    se muestra un ejemplo de un texto alternativo.
+                </p>
+            </div>
+        </div>
+        <div class="align-content-center">
+            <figure>
+                <img src="img/textoalternativo.png" dir="auto" class="rounded mx-auto d-block"
+                     alt="Imagen de texto alternativo en MS Word." title="Texto alternativo en MS Word.">
+                <figcaption class="text-center">Figura 4. Texto alternativo en MS Word.</figcaption>
+            </figure>
+        </div>
+        <br>
+    </section>
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="text-center bold">Hipervínculos en MS Word</h3>
+                <p class="card-text mb-auto">
+                    Si el documento Word tiene hipervínculos, es recomendable cambiar el texto visualizado a un lenguaje
+                    común. Los hipervínculos deben transmitir información clara y precisa sobre el destino. En la
+                    Figura 5 se muestra un ejemplo de hipervínculos.
+                </p>
+            </div>
+        </div>
+        <div class="align-content-center">
+            <figure>
+                <img src="img/hipervinculoWord.png" dir="auto" class="rounded mx-auto d-block"
+                     alt="Imagen de hipervínculos en MS Word." title="Hipervínculos en MS Word.">
+                <figcaption class="text-center">Figura 5. Hipervínculos en MS Word.</figcaption>
+            </figure>
+        </div>
+
+    </section>
+    <br>
+    <br>
+
+</div>
+<div th:insert="fragments/base :: js"></div>
+</body>
+<!--Cargar el foote-->
+<footer>
+    <div th:insert="fragments/base::footer"></div>
+</footer>
+</html>

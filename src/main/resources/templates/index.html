@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesibilidad</title>
+    <!--    Carga los estilos CSS de bootstrap-->
+    <div th:insert="fragments/base :: css"></div>
+</head>
+<body><!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--Escribir contenido-->
+<div class="card-body">
+    <div class="carousel slide">
+        <img class="d-block w-100" src="img/banner.png" height="470px" dir="auto">
+    </div>
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h3 class="text-center bold">Accesibilidad</h3>
+                    <p class="text-center mb-auto">En general, la accesibilidad se refiere a la posibilidad de acceder a
+                        cierta cosa o
+                        a la facilidad para hacerlo. El término accesibilidad se utiliza para hacer referencia al grado
+                        o nivel en que cualquier persona, independientemente de su capacidad física o cognitiva, puede
+                        utilizar algo, disfrutar de un servicio o utilizar una infraestructura </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container overflow-hidden">
+        <h3 class=" text-center bold">Accesibilidad computacional</h3>
+        <div class="row gx-5">
+            <div class="col">
+                <p class="bg-transparent">La accesibilidad computacional pretende superar las
+                    barreras y dificultades a
+                    las qe se enfrentan las personas cuando intentan acceder a productos y servicios de las Tecnologías
+                    de la Información y la Comunicación (TIC).
+                    Las TIC han facilitado a las personas con discapacidad el acceso a información que antes no estaba
+                    disponible para ellas. Por tanto, el acceso a la información electrónica o digital es un mecanismo
+                    integrador en la sociedad de la información.
+
+                </p>
+            </div>
+            <div class="col">
+                <p class="bg-transparent">Sin embargo, se ha observado que existe una
+                    descoordinación entre los distintos
+                    individuos que intervienen en el proceso de la accesibilidad, que deriva en requerimientos que van
+                    desde problemas con el mobiliario hasta con el hardware y el software. Estos requerimientos dependen
+                    de las limitaciones que tenga cada individuo. Pues las necesidades no son las mismas para una
+                    persona con problemas visuales que para una persona de la tercera edad o para personas con
+                    discapacidad intelectual o personas con problemas auditivos.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h3 class="text-center bold">Accesibilidad de documentos electrónicos</h3>
+                    <p class="mb-auto">Los documentos electrónicos se consideran accesibles si pueden ser
+                        leídos por el mayor número posible de personas con discapacidad visual, discapacidad intelectual
+                        o adultos mayores. Para realizar dichos documentos se utilizan herramientas de edición de textos
+                        y presentaciones como: Microsoft PowerPoint, Microsoft Word, Adobe Acrobat PDF. Estos documentos
+                        pueden leerse utilizando lectores de pantalla o pantallas braille que utilizan las personas con
+                        discapacidad. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+</div>
+
+<div th:insert="fragments/base :: js"></div>
+
+</body>
+<footer>    <!--Cargar el foote-->
+    <div th:insert="fragments/base::footer"></div>
+</footer>
+</html>

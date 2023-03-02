@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesibilidad</title>
+    <!--    Carga los estilos CSS de bootstrap-->
+    <div th:insert="fragments/base :: css"></div>
+</head>
+<body><!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--Escribir contenido-->
+<div class="container-fluid">
+    <section>
+        <br>
+        <h1 class="text-center bold">Accesibilidad en PDF</h1>
+        <div class="row g-0">
+            <div class="col-md-4">
+                <figure>
+                    <img src="img/accesibilidadpdf.png" dir="auto" class="img-fluid rounded-start"
+                         alt="Imagen de accesibilidad en PDF" title="Accesibilidad en PDF">
+                    <figcaption class="text-center">Figura 1. Accesibilidad en PDF</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="card-text">Un archivo PDF contiene una estructura lógica detrás del documento. Los
+                        documentos se etiquetan según sus autores, lo que es un paso más allá de la simple creación de
+                        PDF. Si usa un lector de pantalla, leerá el documento PDF en orden de etiqueta. Incluso puede
+                        ser que este orden difiera del orden lógico de lectura o visual [8]. Por ello es importante que
+                        al realizar un documento de MS Word o MS PowerPoint se revise la accesibilidad correspondiente
+                        para que, al momento de convertir un archivo en PDF, este contenga las etiquetas
+                        correspondientes.
+                        Todo documento PDF accesible debe cumplir al menos las siguientes características:
+                    </p>
+                    <ul>
+                        <li>Orden de lectura y estructura lógica.</li>
+                        <li>Texto alternativo de imágenes y otros objetos.</li>
+                        <li>Ayudas a la navegación.</li>
+                        <li>Lenguaje del documento especificado.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="text-center bold">Comprobador de accesibilidad en PDF</h3>
+                <p class="card-text mb-auto">
+                    Existen varias aplicaciones para el chequeo de accesibilidad. Una de las más conocidas es Adobe
+                    Acrobat Pro. Se trata de un lector de PDF que cuenta con una versión de paga que permite realizar un
+                    chequeo de accesibilidad y realizar la edición del fichero PDF en caso de ser necesario.
+                </p>
+                <p class="card-text mb-auto">
+                    PAC 2021 es una alternativa gratuita que revisa todo el contenido del fichero PDF y muestra los
+                    errores que tiene el archivo para su corrección. Como se muestra en la Figura 2, este software tiene
+                    la estructura básica de un PDF accesible y muestra los errores y posibles correcciones que se puede
+                    realizar al archivo.
+                </p>
+            </div>
+        </div>
+        <div class="align-content-center">
+            <figure>
+                <img src="img/comprobadorpdf.png" dir="auto" class="rounded mx-auto d-block"
+                     alt="Imagen de pantalla principal del Verificador de accesibilidad PDF 2021." title="Pantalla principal del Verificador de accesibilidad PDF 2021.">
+                <figcaption class="text-center">Figura 2. Pantalla principal del Verificador de accesibilidad PDF 2021.</figcaption>
+            </figure>
+        </div>
+        <br>
+        <br>
+    </section>
+</div>
+<div th:insert="fragments/base :: js"></div>
+</body>
+<!--Cargar el foote-->
+<footer>
+    <div th:insert="fragments/base::footer"></div>
+</footer>
+</html>
