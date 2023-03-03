@@ -4,35 +4,69 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ajustes</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Ajustes de visión</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="container mt-2">
-                        <div class="row">
-                            <h3>Ajustes del texto</h3>
-                            <div class="col-sm-3">
+                    <div class="container">
+                        <!--Seccion de texto-->
+                        <div class="row mt-5">
+                            <h4 class="mb-2"> Color de Texto </h4>
+                            <div class="btn-group d-flex justify-content-between" role="group">
                                 <button type="button" onclick="cambiarColorTextoAzul()" class="btn btn-primary">Texto
                                 </button>
-                            </div>
-                            <div class="col-sm-3">
                                 <button type="button" onclick="cambiarColorTextoVerde()" class="btn btn-success">Texto
                                 </button>
-                            </div>
-                            <div class="col-sm-3">
                                 <button type="button" onclick="cambiarColorTextoNegro()" class="btn btn-dark">Texto
                                 </button>
-                            </div>
-                            <div class="col-sm-3">
-                                <button type="button" onclick="cambiarColorTextoBlanco()" class="btn btn-light">Texto
+                                <button type="button" onclick="cambiarColorTextoBlanco()"
+                                        class="btn btn-outline-secondary">Texto
                                 </button>
                             </div>
                         </div>
+
+                        <!--Seccion de efectos de texto-->
+                        <div class="row mt-5">
+                            <h4 class="mb-2"> Efectos de Texto </h4>
+                            <div class="btn-group d-flex justify-content-between" role="group">
+                                <button type="button" onclick="cambiarFuenteDislexia()" class="btn btn-info">OpenDyslexic
+                                </button>
+                                <button type="button" class="btn btn-primary">Normal
+                                </button>
+                                <button type="button" onclick="aumentarTamañoFuente()" class="btn btn-success"> +
+                                </button>
+                                <button type="button" onclick="disminuirTamanoFuente()" class="btn btn-warning"> -
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!--Seccion de imagenes-->
+                        <div class="row mt-5">
+                            <h4 class="mb-2"> Efecto de imaganes </h4>
+                            <div class="btn-group d-flex justify-content-between" role="group">
+                                <button type="button" class="btn btn-success">Brillo bajo</button>
+                                <button type="button" class="btn btn-danger">Brillo alto</button>
+                                <button type="button" class="btn btn-dark">Blanco y Negro</button>
+                                <button type="button" class="btn btn-warning">Saturar</button>
+                                <button type="button" class="btn btn-primary">Original</button>
+                            </div>
+                        </div>
+
+                        <!--Seccion de plugins-->
+                        <div class="row mt-5">
+                            <h4 class="mb-2"> Extenciones para mejorar la accesibilidad </h4>
+                            <div class="btn-group d-flex justify-content-between" role="group">
+                                <button type="button" onclick="cambiarFuenteDislexia()" class="btn btn-danger">Dislexia</button>
+                                <button type="button" class="btn btn-primary">Texto a Voz</button>
+                                <button type="button" class="btn btn-success">Zoom+</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
