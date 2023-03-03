@@ -6,7 +6,8 @@
     <!--    Carga los estilos CSS de bootstrap-->
     <div th:insert="fragments/base :: css"></div>
 </head>
-<body><!--Carga el NAV-->
+<body>
+<!--Carga el NAV-->
 <div th:insert="fragments/base :: nav"></div>
 <!--Escribir contenido-->
 <div class="card-body">
@@ -70,7 +71,9 @@
     </section>
     <!--BtnTop-->
     <section class="py-5">
+        <!-- Button trigger modal -->
         <div th:insert="fragments/base :: btntop"></div>
+        <div th:insert="fragments/modal::modal"></div>
     </section>
     <br>
 </div>
