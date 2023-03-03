@@ -42,6 +42,21 @@ function cambiarFuenteDislexia() {
 }
 
 
+
+// function aumentarTamañoFuente() {
+//     // Obtener el elemento body
+//     var body = document.getElementsByTagName('body')[0];
+//
+//     // Obtener el tamaño actual de fuente
+//     var currentFontSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+//
+//     // Aumentar el tamaño de fuente en 1 píxel
+//     var newFontSize = currentFontSize + 1;
+//
+//     // Establecer el nuevo tamaño de fuente en el elemento body
+//     body.style.fontSize = newFontSize + 'px';
+// }
+
 function aumentarTamañoFuente() {
     // Obtener el elemento body
     var body = document.getElementsByTagName('body')[0];
@@ -54,6 +69,23 @@ function aumentarTamañoFuente() {
 
     // Establecer el nuevo tamaño de fuente en el elemento body
     body.style.fontSize = newFontSize + 'px';
+
+    // Almacenar el nuevo tamaño de fuente en caché
+    localStorage.setItem('fontSize', newFontSize);
+}
+
+
+function establecerTamañoFuente() {
+    // Obtener el elemento body
+    var body = document.getElementsByTagName('body')[0];
+
+    // Obtener el tamaño de fuente almacenado en caché
+    var cachedFontSize = localStorage.getItem('fontSize');
+
+    // Si el tamaño de fuente está almacenado en caché, establecerlo en el elemento body
+    if (cachedFontSize) {
+        body.style.fontSize = cachedFontSize + 'px';
+    }
 }
 
 

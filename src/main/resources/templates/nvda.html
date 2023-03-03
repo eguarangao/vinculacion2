@@ -6,11 +6,203 @@
     <!--    Carga los estilos CSS de bootstrap-->
     <div th:insert="fragments/base :: css"></div>
 </head>
-<body><!--Carga el NAV-->
+<body onload="establecerTamañoFuente()"><!--Carga el NAV-->
 <div th:insert="fragments/base :: nav"></div>
 <!--Escribir contenido-->
-<div class="container-fluid">
-    <h1>Hola soy NVDA</h1>
+<div class="container">
+
+    <br>
+    <h1>Software para escucha</h1>
+
+    <section>
+        <p>El software para escucha o lectores de pantalla es un tipo de herramienta de asistencia muy
+            importante para personas con discapacidad visual, ya que les permite acceder a la información y
+            utilizar las aplicaciones en su computadora.
+        </p>
+        <p>
+            Una de las características más importantes de estos programas es su capacidad de personalización.
+            Los usuarios pueden ajustar la velocidad de lectura, el tono de voz, el tipo de voz y otros ajustes
+            para adaptarse a sus necesidades y preferencias.
+        </p>
+        <p>
+            Otra característica importante de los lectores de pantalla es su capacidad para trabajar con otras
+            tecnologías de asistencia, como teclados Braille y dispositivos de entrada de voz. Esto permite a los
+            usuarios utilizar diferentes métodos para interactuar con la computadora y hacer que la experiencia
+            sea más cómoda y accesible.
+        </p>
+
+        <br>
+
+        <h2>NVDA</h2>
+        <br>
+        <p>
+            NVDA es un software de código abierto que proporciona una solución de lectura de pantalla para
+            personas con discapacidad visual. A diferencia de otras soluciones de lectura de pantalla
+            comerciales, NVDA es gratuito y puede ser utilizado por cualquier persona que lo necesite.
+            Una de las características más destacadas de NVDA es su facilidad de uso. La interfaz es intuitiva y
+            fácil de navegar, lo que hace que la experiencia del usuario sea más agradable y menos frustrante.
+            Además, el software es altamente configurable, lo que permite a los usuarios personalizar su
+            configuración para adaptarse a sus necesidades y preferencias individuales (Figura 10).
+        </p>
+
+        <br>
+
+    </section>
+
+    <section>
+        <div class="row">
+            <figure>
+                <img src="img/NVDA-OPCIONES.jpg" dir="auto" class="w-40 h-60 rounded mx-auto d-block"
+                     alt="Imagen de accesibilidad en PowerPoint" title="Accesibilidad en MS PowerPoint">
+                <figcaption class="text-center">Figura 10. Personalización de NVDA</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <p>
+            Otra característica importante de NVDA es su capacidad para trabajar con una amplia variedad de
+            aplicaciones y programas. Desde navegadores web hasta procesadores de texto y reproductores
+            multimedia, NVDA puede leer el contenido de la pantalla y proporcionar información detallada
+            sobre la estructura y los elementos de la interfaz.
+        </p>
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <h3>Uso básico</h3>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">El usuario tendrá la posibilidad de leer el contenido de la pantalla,
+                presionando la
+                tecla “Bloq Mayus” (también conocida como la tecla NVDA) + Alt + N./li>
+            <li class="list-group-item">El usuario podrá utilizar las teclas de flecha para moverse por el contenido
+                de la
+                pantalla.
+            </li>
+            <li class="list-group-item">Utilizar la tecla NVDA + la tecla F1 para acceder a la Ayuda de NVDA.</li>
+            <li class="list-group-item">Para cerrar el programa NVDA, presionar la tecla NVDA + Q.</li>
+        </ol>
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <h3>Características adicionales</h3>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">NVDA incluye una función de lectura de pantalla completa que permite a los
+                usuarios leer documentos completos, incluidos archivos PDF y sitios web. Para
+                activar esta función, el usuario deberá presionar la tecla NVDA + F11. Para salir de
+                la lectura de pantalla completa, presionar la tecla Esc.
+            </li>
+            <li class="list-group-item">NVDA viene con varias voces incluidas. Para personalizar las voces, el
+                usuario deberá abrir
+                el menú de NVDA presionando las teclas (NVDA + N) y seleccionar &quot;Preferencias de
+                sintetizador de voz&quot; en la pestaña se mostrarán las voces disponibles de NVDA.
+            </li>
+        </ol>
+    </section>
+    <br>
+    <br>
+    <section>
+        <h3>Atajos de teclado</h3>
+        <table class="table table-striped">
+            <thead class="table-dark">
+            <tr>
+                <th scope="col">Atajo de teclado</th>
+                <th scope="col">Descripción</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Activa o desactiva NVDA</td>
+                <td>Bloq Mayús + Q</td>
+            </tr>
+
+            <tr>
+                <td>Activa o desactiva el silenciamiento de NVDA</td>
+                <td>Bloq Mayús + S</td>
+            </tr>
+
+            <tr>
+                <td>Anuncia el título de la ventana activa</td>
+                <td>Bloq Mayús + B</td>
+            </tr>
+
+            <tr>
+                <td>Navega entre las diferentes áreas de la ventana activa</td>
+                <td>Bloq Mayús + Tab</td>
+            </tr>
+
+
+            <tr>
+                <td>Abre el diálogo de elementos</td>
+                <td>Bloq Mayús + F7</td>
+            </tr>
+
+            <tr>
+                <td>Abre el diálogo de configuración de NVDA</td>
+                <td>Bloq Mayús + F9</td>
+            </tr>
+
+            <tr>
+                <td>Abre el diálogo de sintetizador de voz</td>
+                <td>Bloq Mayús + F12</td>
+            </tr>
+
+            <tr>
+                <td>Pausa temporalmente la salida de voz de NVDA</td>
+                <td>Ctrl</td>
+            </tr>
+
+            <tr>
+                <td>Lee el elemento anterior</td>
+                <td>Bloq Mayús + Flecha arriba</td>
+            </tr>
+
+            <tr>
+                <td>Lee el elemento siguiente</td>
+                <td>Bloq Mayús + Flecha abajo</td>
+            </tr>
+
+            <tr>
+                <td>Lee el elemento anterior en la lista de historial</td>
+                <td>Bloq Mayús + Flecha
+                    izquierda
+                </td>
+            </tr>
+
+            <tr>
+                <td>Lee el elemento siguiente en la lista de historial</td>
+                <td>Bloq Mayús + Flecha derecha</td>
+            </tr>
+
+            <tr>
+                <td>Anunciar la hora actual</td>
+                <td>Bloq Mayús + F12</td>
+            </tr>
+
+            <tr>
+                <td>Anunciar la fecha actual</td>
+                <td>Bloq Mayús + F12 (dos veces)</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--BtnTop-->
+    <section class="py-5">
+        <!-- Button trigger modal -->
+        <div th:insert="fragments/base :: btntop"></div>
+        <div th:insert="fragments/modal::modal"></div>
+    </section>
+    <br>
 </div>
 <div th:insert="fragments/base :: js"></div>
 </body>
