@@ -35,5 +35,10 @@ public class HomeConroller {
         return "nvda";
     }
 
+    @GetMapping("/zoomit")
+    public String zoomit() {
+        return "zoomit";
+    }
+
 
 }

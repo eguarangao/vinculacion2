@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ZoomIt: Software para lectura</title>
+    <!--    Carga los estilos CSS de bootstrap-->
+    <div th:insert="fragments/base :: css"></div>
+</head>
+<body onload="establecerTamañoFuente()"><!--Carga el NAV-->
+<div th:insert="fragments/base :: nav"></div>
+<!--Escribir contenido-->
+<div class="container">
+
+    <br>
+    <h1>Software para lectura</h1>
+
+    <section>
+        <p>Las personas con discapacidad visual utilizan los amplificadores de pantalla para ampliar la información
+            presentada en la pantalla de un sistema informático. La característica clave de su funcionamiento es que
+            amplía la información de la pantalla independientemente de las aplicaciones que se estén ejecutando. Por lo
+            tanto, un amplificador de pantalla tiene que interactuar con el sistema operativo y las aplicaciones de una
+            computadora para realizar tres tareas principales:
+        <ol>
+            <li>Capturar la información que se presentan en la pantalla.</li>
+            <li>Determinar el área que se ampliará para mostrar al usuario.</li>
+            <li>Presentar la información ampliada en la pantalla.</li>
+        </ol>
+        </p>
+        <p>
+            ZoomIt es un magnificador de pantalla (o sistema de ampliación de pantalla), anotación y grabación de
+            pantalla para presentaciones técnicas. ZoomIt se ejecuta en segundo plano y se activa con atajos de teclado
+            personalizables para acercar un área de la pantalla, moverse mientras se acerca y dibujar en la imagen
+            ampliada. ZoomIt funciona en todas las versiones de Windows
+        </p>
+        <p>
+            En la pantalla principal de ZoomIt (Figura 1) se puede configurar los atajos de teclado, el nivel de zoom
+            que el usuario desea o, simplemente, se mantiene la configuración por defecto y se hace clic en “Ok”. A
+            continuación, se explicarán las funciones más importantes que ayudarán a personas con discapacidad visual
+            al momento de interactuar con una computadora.
+        </p>
+
+    </section>
+
+    <section>
+        <div class="row">
+            <figure>
+                <img src="img/zoomit-pantalla-principal.jpg" dir="auto" class="w-40 h-60 rounded mx-auto d-block"
+                     alt="Pantalla principal de ZoomIt" title="Pantalla principal de ZoomIt">
+                <figcaption class="text-center">Figura 1. Pantalla principal de ZoomIt</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h3>Ampliar la pantalla</h3>
+        <p>
+            Si se dejó la configuración de atajos que viene por defecto y ya con el programa ejecutándose, se procede a
+            pulsar la combinación de teclas Ctrl + 1 para ampliar la pantalla. Se puede controlar el zoom de la
+            pantalla. Si se desea ampliar más la pantalla, simplemente se desliza la rueda del ratón para arriba o se
+            pulsa la tecla de flecha para arriba. Si se desea alejar la pantalla, se desliza la rueda del ratón para
+            abajo o se pulsa la tecla de flecha para abajo. En la Figura 2 se muestra a la izquierda la pantalla normal
+            sin amplificar, mientras que a la derecha se muestra la pantalla amplificada con ZoomIt. Para salir de este
+            modo simplemente se presiona la tecla Esc.
+        </p>
+    </section>
+
+    <section>
+        <div class="row">
+            <figure>
+                <img src="img/comparar-zoomit.jpg" dir="auto" class="w-40 h-60 rounded mx-auto d-block"
+                     alt="Comparación pantalla con zoom" title="Comparación pantalla con zoom">
+                <figcaption class="text-center">Figura 2. A la izquierda la pantalla sin ampliar, a la derecha la
+                    pantalla ampliada con ZoomIt</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h3>Dibujos y anotaciones en pantalla</h3>
+        <p>
+            Si se desea empezar a dibujar o a realizar anotaciones mientras está ampliada la pantalla, simplemente se
+            presiona el botón izquierdo del ratón y para desactivar esta función se pulsa el botón derecho del ratón.
+            También se puede acceder a esta función con la combinación de teclas Ctrl + 2, siempre y cuando no se haya
+            ampliado la pantalla. Para saber si esta función está activa, el puntero del ratón cambia a una cruz como
+            se muestra en la Figura 3.
+        </p>
+    </section>
+
+    <section>
+        <div class="row">
+            <figure>
+                <img src="img/puntero-de-raton.jpg" dir="auto" class="w-40 h-60 rounded mx-auto d-block"
+                     alt="Puntero de raton" title="Puntero de raton">
+                <figcaption class="text-center">Figura 3. El puntero del ratón cambia al intentar dibujar sobre la
+                    pantalla</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <p>
+            Una vez que se haya accedido a la función para realizar anotaciones con Ctrl + 2, se puede realizar las
+            siguientes tareas con los atajos de teclado que se muestran en la Tabla 1.
+        </p>
+    </section>
+
+    <section>
+        <h3>Atajos de teclado</h3>
+        <figure>
+            <table class="table table-striped">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">Tareas</th>
+                    <th scope="col">Atajo de teclado</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Centrar el puntero del ratón</td>
+                    <td>Barra espaciadora</td>
+                </tr>
+                <tr>
+                    <td>Pizarra blanca</td>
+                    <td>W</td>
+                </tr>
+                <tr>
+                    <td>Pizarra negra</td>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <td>Escribir un texto</td>
+                    <td>T</td>
+                </tr>
+                <tr>
+                    <td>Incrementar/Decrementar el tamaño del texto</td>
+                    <td>Deslizar rueda del ratón para arriba/abajo o con las flechas del teclado</td>
+                </tr>
+                <tr>
+                    <td>Pluma roja</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Pluma verde</td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <td>Pluma azul</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Pluma amarilla</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>Pluma naranja</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Pluma rosa</td>
+                    <td>P</td>
+                </tr>
+                <tr>
+                    <td>Dibujar una línea</td>
+                    <td>Mantener pulsado Shift</td>
+                </tr>
+                <tr>
+                    <td>Dibujar un cuadrado</td>
+                    <td>Mantener pulsado Ctrl</td>
+                </tr>
+                <tr>
+                    <td>Dibujar un círculo</td>
+                    <td>Mantener pulsado Tab</td>
+                </tr>
+                <tr>
+                    <td>Dibujar una flecha</td>
+                    <td>Mantener pulsado Ctrl + Shift</td>
+                </tr>
+                <tr>
+                    <td>Deshacer cambios</td>
+                    <td>Ctrl + Z</td>
+                </tr>
+                <tr>
+                    <td>Deshacer todo</td>
+                    <td>Ctrl + E</td>
+                </tr>
+                <tr>
+                    <td>Copiar captura de pantalla al portapapeles</td>
+                    <td>Ctrl + C</td>
+                </tr>
+                <tr>
+                    <td>Guardar captura de pantalla como PNG</td>
+                    <td>Ctrl + S</td>
+                </tr>
+                <tr>
+                    <td>Salir</td>
+                    <td>Esc o clic derecho</td>
+                </tr>
+                </tbody>
+            </table>
+            <figcaption class="text-center">Tabla 1. Atajos de teclado para realizar anotaciones</figcaption>
+        </figure>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--BtnTop-->
+    <section class="py-5">
+        <!-- Button trigger modal -->
+        <div th:insert="fragments/base :: btntop"></div>
+        <div th:insert="fragments/modal::modal"></div>
+    </section>
+    <br>
+</div>
+<div th:insert="fragments/base :: js"></div>
+</body>
+<!--Cargar el foote-->
+<footer>
+    <div th:insert="fragments/base::footer"></div>
+</footer>
+</html>
