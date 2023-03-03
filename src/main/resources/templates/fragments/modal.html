@@ -1,14 +1,34 @@
 <!-- Modal -->
 <div th:fragment="modal">
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Ajustes</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h3>Ajsutes de texto</h3>
+                    <div class="container mt-2">
+                        <div class="row">
+                            <h3>Ajustes del texto</h3>
+                            <div class="col-sm-3">
+                                <button type="button" onclick="cambiarColorTextoAzul()" class="btn btn-primary">Texto
+                                </button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" onclick="cambiarColorTextoVerde()" class="btn btn-success">Texto
+                                </button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" onclick="cambiarColorTextoNegro()" class="btn btn-dark">Texto
+                                </button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" onclick="cambiarColorTextoBlanco()" class="btn btn-light">Texto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
