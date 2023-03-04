@@ -35,6 +35,11 @@ public class HomeConroller {
         return "nvda";
     }
 
+    @GetMapping("/dislexia")
+    public String dislexia(){
+        return "dislexia";
+    }
+
     @GetMapping("/zoomit")
     public String zoomit() {
         return "zoomit";
