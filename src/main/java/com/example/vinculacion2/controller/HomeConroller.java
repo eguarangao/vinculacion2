@@ -40,5 +40,9 @@ public class HomeConroller {
         return "zoomit";
     }
 
+    @GetMapping("/acercade")
+    public String acercade() {
+        return "acercade";
+    }
 
 }
