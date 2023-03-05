@@ -3,16 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <div th:insert="fragments/base :: css"></div>
+    <div th:insert="fragments/base :: css"></div>
 </head>
 <body>
 <div th:insert="fragments/base :: nav"></div>
 <div class="card-body">
+    <section class="container overflow-hidden">
+        <h3 class=" text-center bold">¿Qué es [NOMBRE]?</h3>
+        <div class="row gx-5">
+            <div class="col">
+                <p class="bg-transparent">
+                    Este sitio web ha sido desarrollado como parte del proyecto de vinculación “Tecnologías de la
+                    Información y Comunicación enfocadas a la discapacidad en la zona de influencia de la UTEQ” (F&C),
+                    de la Carrera de Ingeniería en Sistemas/Software, perteneciente a la Facultad de Ciencias de la
+                    Ingeniería, de la Universidad Técnica Estatal de Quevedo, en cooperación con la Biblioteca
+                    institucional. En él se describen algunas herramientas que podrían ayudar a mejorar la accesibilidad
+                    en la biblioteca.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container px-4">
+            <h3 class=" text-center bold">Desarrolladores</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-title">AVILES CHALACO DIANA STEFANIA</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <p class="card-title">ZAMBRANO MONSERRATE DENNISSE PAOLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <p class="card-title">GUARANGA OTAVALO EBERT STEEVEN</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <p class="card-title">ANGULO ORTIZ JAIRO ALEJANDRO</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <p class="card-title">CEVALLOS MAYORGA JONATHAN PATRICIO</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <p class="card-title">SALINAS BOZA LIN JAVIER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h3 class=" text-center bold">Dirigido por:</h3>
+        <!-- <div class="container px-4">
+
+            <div class="card mb-3">
+                 <div class="row gx-5">
+                     <div class="col-md-4">
+                         <img src="img/ingorlando.png" dir="auto" class="rounded-circle h-25 w-25">
+
+                     </div>
+                     <div class="col-md-8">
+                         <div class="card-body">
+                             <p class="card-text">PhD. Orlando Ramiro Erazo Moreta</p>
+                         </div>
+                     </div>
+               <div class="col">
+                         <div class="p-3 bg-transparent align-content-center">
+                             <img src="img/ingmercedes.jpg"  dir="auto" class="rounded-circle h-25 w-25">
+                             <p>Ms. Mercedes Cleopatra Moreira Menendez</p>
+                         </div>
+                     </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-md-4">
+                        <img src="img/ingorlando.png" dir="auto" class="rounded-circle h-25 w-25">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">PhD. Orlando Ramiro Erazo Moreta</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 bg-transparent align-content-center">
+                            <img src="img/ingmercedes.jpg"  dir="auto" class="rounded-circle h-25 w-25">
+                            <p>Ms. Mercedes Cleopatra Moreira Menendez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="container overflow-hidden">
+            <div class="row gx-8">
+                <div class="col">
+                    <div class="p-4 bg-transparent">
+                        <div class=" mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/ingorlando.png" class="rounded-circle h-75 w-75" alt="..." dir="auto">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">PhD. Orlando Ramiro Erazo Moreta</p>
+                                        <p class="card-text">oerazo@uteq.edu.ec</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 bg-transparent">
+                        <div class=" mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/ingmercedes.jpg" class="rounded-circle h-75 w-75" alt="..." dir="auto">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">Ms. Mercedes Cleopatra Moreira Menendez</p>
+                                        <p class="card-text">mmoreira@uteq.edu.ec</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </div>
 <div th:insert="fragments/base :: js"></div>
 </body>
 <footer>    <!--Cargar el foote-->
-  <div th:insert="fragments/base::footer"></div>
+    <div th:insert="fragments/base::footer"></div>
 </footer>
 </html>
