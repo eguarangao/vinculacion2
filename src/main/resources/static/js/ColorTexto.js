@@ -30,15 +30,20 @@ function cambiarColorTextoBlanco() {
     document.body.style.backgroundColor = "black";
 }
 
-function cambiarFuenteDislexia() {
-    // Cambiar la fuente de todos los elementos de la página
-    var elementosDeTexto = document.getElementsByTagName("body")[0].getElementsByTagName("*");
-    for (var i = 0; i < elementosDeTexto.length; i++) {
-        elementosDeTexto[i].style.fontFamily = "OpenDyslexic, Arial, sans-serif";
-    }
+// function cambiarFuenteDislexia() {
+//     // Cambiar la fuente de todos los elementos de la página
+//     var elementosDeTexto = document.getElementsByTagName("body")[0].getElementsByTagName("*");
+//     for (var i = 0; i < elementosDeTexto.length; i++) {
+//         elementosDeTexto[i].style.fontFamily = "OpenDyslexic, Arial, sans-serif";
+//     }
+
+    function cambiarFuenteDislexia() {
+        // Cambiar la fuente de todos los elementos de la página
+        var body = document.getElementsByTagName('body')[0];
+            body.style.fontFamily = "OpenDyslexic, Arial, sans-serif";
 
     // Ajustar el tamaño de fuente para mejorar la legibilidad
-    document.body.style.fontSize = "1.2em";
+    body.style.fontSize = "1.2em";
 }
 
 
@@ -107,14 +112,8 @@ function restablecerEstiloTexto() {
     // Obtener todos los elementos de la página
     var body = document.getElementsByTagName('body')[0];
 
-    // Obtener el tamaño actual de fuente
-    var currentFontSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
-
-    // Calcular el nuevo tamaño de fuente
-    var newFontSize = 17;
-
     // Establecer el nuevo tamaño de fuente en el elemento body
-    body.style.fontSize = newFontSize + 'px';
+    body.style.fontSize = '17px';
     body.style.fontFamily = "Nunito";
 
     cambiarColorTextoNegro();
