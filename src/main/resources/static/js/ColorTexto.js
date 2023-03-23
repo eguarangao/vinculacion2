@@ -111,10 +111,13 @@ function restablecerEstiloTexto() {
     var currentFontSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
 
     // Calcular el nuevo tamaño de fuente
-    var newFontSize = 16;
+    var newFontSize = 17;
 
     // Establecer el nuevo tamaño de fuente en el elemento body
     body.style.fontSize = newFontSize + 'px';
+
+    cambiarColorTextoNegro();
+    restablecerImagenes();
 }
 
 function aplicarEfectoBlancoNegro() {
