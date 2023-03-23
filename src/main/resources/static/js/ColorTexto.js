@@ -115,6 +115,7 @@ function restablecerEstiloTexto() {
 
     // Establecer el nuevo tamaño de fuente en el elemento body
     body.style.fontSize = newFontSize + 'px';
+    body.style.fontFamily = "Nunito";
 
     cambiarColorTextoNegro();
     restablecerImagenes();
