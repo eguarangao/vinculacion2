@@ -105,15 +105,16 @@ function disminuirTamanoFuente() {
 
 function restablecerEstiloTexto() {
     // Obtener todos los elementos de la página
-    var elementos = document.getElementsByTagName('*');
+    var body = document.getElementsByTagName('body')[0];
 
-    // Establecer el tipo de letra, tamaño de fuente y peso de fuente para cada elemento
-    for (var i = 0; i < elementos.length; i++) {
-        elementos[i].style.fontFamily = "Nunito";
-        elementos[i].style.fontSize = "16px";
-        elementos[i].style.fontWeight = "400";
-        elementos[i].style.lineHeight = "24px";
-    }
+    // Obtener el tamaño actual de fuente
+    var currentFontSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+
+    // Calcular el nuevo tamaño de fuente
+    var newFontSize = 16;
+
+    // Establecer el nuevo tamaño de fuente en el elemento body
+    body.style.fontSize = newFontSize + 'px';
 }
 
 function aplicarEfectoBlancoNegro() {
